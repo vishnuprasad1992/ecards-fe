@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.banner{
+    height: 600px;
+}
+.banner-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 100px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: rgb(24, 155, 179);
+  font-size: 1.2rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  padding: 0 100px;
+  color: ivory;
+  opacity: 0.7;
+}
+.navbar-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-content ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+.navbar-content ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+.search-input {
+  padding: 10px;
+  font-size: inherit;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.search-form {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.center {
+  text-align: center;
+}
+.form-heading {
+  font-size: 1.3rem;
+}
+.btn {
+  margin-left: auto;
+  display: flex;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 30px 0 0 auto;
+  background: coral;
+  color: white;
+}
+.button {
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+button :hover {
+  background: red;
+  color: red;
+}
+.portfolio-form-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  overflow-y: scroll;
+}
+.portfolio-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  border: none;
+  /* overflow-y: scroll; */
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.portfolio-form input {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+}
+.portfolio-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.portfolio-button-content {
+  position: relative;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background: lawngreen;
+}
+.portfolio-button-content :hover {
+  background: red;
+}
+.portfolio-icon {
+  position: absolute;
+  right: 20px;
+}
+.error {
+  color: red;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.cursor {
+  cursor: pointer;
+}
+.footer{
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 233, 245);
+
+}

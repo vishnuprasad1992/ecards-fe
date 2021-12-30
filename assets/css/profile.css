@@ -1,0 +1,36 @@
+.company-image {
+    /* margin-top: 50px; */
+    margin: 50px auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company-image img{
+    border-radius: 50%;
+}
+.profile-details{
+    margin: auto;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-section{
+    width: 45%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-section-card{
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: 10px;
+    cursor: pointer;
+}
+.profile-section-card :hover{
+    background-color: white;
+}
