@@ -4,7 +4,7 @@ import Profile from '../../components/Profile'
 import { getPortfolio } from '../../controllers/portfolio'
 
 
-const Index = () => {
+const CompanyName = () => {
    const router= useRouter()
    const {companyName} = router.query
    const [portfolio, setPortfolio] = useState({})
@@ -20,4 +20,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default CompanyName

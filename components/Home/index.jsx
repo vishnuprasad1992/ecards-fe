@@ -1,6 +1,6 @@
 import Header from "../../Shared/Header"
 import Banner from "./Banner"
-import Services from "../Services/index"
+// import Services from "../Services/index"
 import About from "../About/index"
 import Contact from "../Contact/index"
 import Portfolio from "../Portfolio/index"
@@ -17,10 +17,10 @@ const Home = () => {
           <Header setPopupOpen={setPopupOpen} popupOpen={popupOpen}/>
           <Banner/>
           <div>Home Page</div>
-          <Services />
-          <About />
-          <Contact />
-          <Portfolio />
+          {/* <Services /> */}
+          {/* <About /> */}
+          {/* <Contact />  */}
+          {/* <Portfolio /> */}
           {popupOpen && popupOpen.login && <Login setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
           {popupOpen && popupOpen.register && <Register  setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
           <Footer/>

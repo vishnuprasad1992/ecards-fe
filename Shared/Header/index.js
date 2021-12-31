@@ -18,6 +18,7 @@ const Header = ({setPopupOpen,popupOpen}) => {
         location.reload()
     }
     const loginPopup = () => {
+        
         setPopupOpen({...popupOpen,login:true})
     }
     return (
@@ -26,11 +27,14 @@ const Header = ({setPopupOpen,popupOpen}) => {
             <div className="navbar-content">
                 <ul>
                     <li><Link href="/">Home</Link></li>
-                    <li className="cursor" onClick={()=>scrollToElement("#services")} >Services</li>
-                    {/* <li><Link href="/services">Services</Link></li> */}
-                    <li className="cursor" onClick={()=>scrollToElement("#about")} >About</li>
+                    {/* <li className="cursor" onClick={()=>scrollToElement("#services")} >Services</li> */}
+                    <li><Link href="/services">Services</Link></li>
+                    <li><Link href="/about">About</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/portfolio">Portfolio</Link></li>
+                    {/* <li className="cursor" onClick={()=>scrollToElement("#about")} >About</li>
                     <li className="cursor" onClick={()=>scrollToElement("#contact")} >Contact</li>
-                    <li className="cursor" onClick={()=>scrollToElement("#portfolio")} >Protfolio</li>
+                    <li className="cursor" onClick={()=>scrollToElement("#portfolio")} >Protfolio</li> */}
                     {authUser && authUser._id ? <li className="cursor" onClick={logout}>logout</li> : <li className="cursor" onClick={loginPopup} >Login</li>}
                 </ul>
             </div>

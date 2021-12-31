@@ -2,8 +2,11 @@ import Header from "../../Shared/Header"
 import PersonOutlineTwoToneIcon from '@mui/icons-material/PersonOutlineTwoTone';
 import CreatePortFolioForm from "./CreatePortFolioForm";
 import { useEffect, useState } from "react";
+import Login from "../../Shared/Auth/Login";
+import Register from "../../Shared/Auth/Register";
 
 const Portfolio = () => {
+    const [popupOpen, setPopupOpen] = useState({})
     const [open, setOpen] = useState(false)
     const [authUser, setAuthUser] = useState({})
 
@@ -12,11 +15,13 @@ const Portfolio = () => {
            setAuthUser(JSON.parse(localStorage.getItem("user")).authUser)
        }
     }, [])
-    console.log(authUser)
     return (
         <div>
-            {/* <Header /> */}
-            <div id="portfolio" style={{ height: "900px",backgroundColor:"gray" }}>
+            <Header setPopupOpen={setPopupOpen} popupOpen={popupOpen}/>
+            {popupOpen && popupOpen.login && <Login setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
+          {popupOpen && popupOpen.register && <Register  setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
+
+            <div id="portfolio" className="mt100">
 
             <div className="container">
                 <div className="portfolio">
