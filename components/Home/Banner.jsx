@@ -28,8 +28,8 @@ const Banner = () => {
         className="banner-img"
       /> */}
       <Swiper navigation={true} className="mySwiper">
-        {images.map((im) => (
-          <SwiperSlide>
+        {images.map((im,i) => (
+          <SwiperSlide key={i}>
             <img
               src={im}
               alt={im}
