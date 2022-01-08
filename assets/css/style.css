@@ -9,6 +9,9 @@
 h1 {
   font-size: 32px;
 }
+h2 {
+  font-size: 25px;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -111,6 +114,9 @@ h1 {
 .pl20 {
   padding-left: 20px;
 }
+.p50{
+  padding: 50px;
+}
 .center {
   text-align: center;
 }
@@ -181,11 +187,21 @@ button :hover {
   justify-content: center;
   align-items: center;
 }
+.flex-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
 .flex-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.flex50{
+  flex: 50%;
 }
 .close {
   display: flex;
@@ -244,4 +260,29 @@ button :hover {
   background-image: url("../images/body-section.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.message-height{
+  min-height: 200px;
+}
+.input-contact{
+  min-width: 300px;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+}
+.submit{
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.bg-contact{
+  background-color: wheat;
+  padding: 30px;
+  border-radius: 30px;
 }
