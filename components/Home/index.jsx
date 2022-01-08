@@ -18,11 +18,40 @@ const Home = () => {
       {popupOpen && popupOpen.register && (
         <Register setPopupOpen={setPopupOpen} popupOpen={popupOpen} />
       )}
-      <div>This is my home page</div>
-      {/* <Services /> */}
-      {/* <About /> */}
-      {/* <Contact />  */}
-      {/* <Portfolio /> */}
+      <div className="container mb20" >
+        <div className="center flex-column mt30">
+          <h1 className="heading mb20"> Lorem ipsum dolor sit </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          </p>
+        </div>
+        <div className="center flex-column mt30">
+          <h1 className="heading mb20"> Lorem ipsum dolor sit </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          </p>
+        </div>
+        <div className="center flex-column mt30">
+          <h1 className="heading mb20"> Lorem ipsum dolor sit </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          </p>
+        </div>
+        <div className="center flex-column mt30">
+          <h1 className="heading mb20"> Lorem ipsum dolor sit </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ducimus mollitia non quasi magni sint. Adipisci tempore vel cum facilis quam fugiat quo dolores quasi explicabo, voluptatibus, repudiandae saepe.
+          </p>
+        </div>
+      </div>
       <Footer />
     </div>
   );

@@ -6,6 +6,9 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
+h1{
+  font-size: 32px;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -28,14 +31,16 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background-color: rgb(24, 155, 179);
+  background-color: wheat;
+  /* background-color: rgb(3, 9, 10); */
   font-size: 1.2rem;
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
   padding: 0 100px;
   /* padding: 0 100px; */
-  color: ivory;
-  opacity: 0.7;
+  color: black;
+  /* opacity: 0.7; */
+  z-index: 1000;
 }
 .navbar-content ul {
   display: flex;
@@ -112,6 +117,10 @@
 .form-heading {
   font-size: 1.3rem;
 }
+.heading{
+  color: rgb(3, 9, 10);
+  text-decoration: underline;
+}
 .btn {
   margin-left: auto;
   display: flex;
@@ -153,6 +162,7 @@ button :hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   overflow-y: scroll;
+  z-index: 999;
 }
 .portfolio-form {
   display: flex;
@@ -170,6 +180,12 @@ button :hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .close {
   display: flex;
@@ -215,7 +231,7 @@ button :hover {
 }
 .footer{
   height: 80px;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
