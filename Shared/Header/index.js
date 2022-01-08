@@ -2,6 +2,7 @@ import Link from "next/link"
 import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from "react";
 import { scrollToElement } from "../../utils/scroll";
+import Banner from "../../components/Home/Banner";
 
 
 
@@ -22,6 +23,7 @@ const Header = ({setPopupOpen,popupOpen}) => {
         setPopupOpen({...popupOpen,login:true})
     }
     return (
+        <>
         <div className="navbar">
             <div className="navbar-brand"><Link href="/">Brand</Link></div>
             <div className="navbar-content">
@@ -51,6 +53,9 @@ const Header = ({setPopupOpen,popupOpen}) => {
                 </form>
             </div>
         </div>
+        <Banner/>
+
+        </>
     )
 }
 
