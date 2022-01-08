@@ -16,13 +16,13 @@ const Home = () => {
         <div>
           <Header setPopupOpen={setPopupOpen} popupOpen={popupOpen}/>
           <Banner/>
-          <div>Home Page</div>
+          {popupOpen && popupOpen.login && <Login setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
+          {popupOpen && popupOpen.register && <Register  setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
+          <div>This is my home page</div>
           {/* <Services /> */}
           {/* <About /> */}
           {/* <Contact />  */}
           {/* <Portfolio /> */}
-          {popupOpen && popupOpen.login && <Login setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
-          {popupOpen && popupOpen.register && <Register  setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
           <Footer/>
         </div>
     )
