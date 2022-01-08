@@ -31,7 +31,7 @@ const Home = () => {
           console.log("FAILED...", err);
         }
       );
-      setEmailParams({})
+      setEmailParams({}) 
   };
 
   return (
