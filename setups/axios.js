@@ -7,12 +7,13 @@ export const axios = () => {
 }
 
 export const authAxios = () => {
-	const token = localStorage.getItem('token')
+	const token = JSON.parse(localStorage.getItem('user'))
+	console.log(token)
 
 	return Axios.create({
 		baseURL: process.env.NEXT_PUBLIC_SERVER_ENDPOINT,
 		headers: {
-			Authorization: `Bearer ${token}`,
+			Authorization: `Bearer ${token.authUser.token}`,
 		},
 	})
 }

@@ -1,8 +1,8 @@
-import { axios } from "../setups/axios";
+import authAxios, { axios } from "../setups/axios";
 
 export const savePortfolioDetails = async (data)=>{
     try {
-        const response = await axios()({
+        const response = await authAxios()({
             url:"/api/portfolio/add-portfolio",
             method:"POST",
             data:data
