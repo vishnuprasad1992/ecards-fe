@@ -143,7 +143,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container mt100 bg-contact mb20">
-        <h2 className="center  heading "> Any Queries </h2>
+        <h2 className="center  heading " style={{color:"white"}}> Any Queries </h2>
         <div className="flex-contact">
           <div className="flex-column flex50">
             <form className="flex-column">

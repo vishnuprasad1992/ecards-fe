@@ -3,11 +3,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from "react";
 import { scrollToElement } from "../../utils/scroll";
 import Banner from "../../components/Home/Banner";
+import { useRouter } from "next/router";
 
 
 
 const Header = ({setPopupOpen,popupOpen}) => {
     const [authUser, setAuthUser] = useState({})
+    const router = useRouter()
 
     useEffect(() => {
         if (localStorage.getItem("user")) {
@@ -25,7 +27,7 @@ const Header = ({setPopupOpen,popupOpen}) => {
     return (
         <>
         <div className="navbar">
-            <div className="navbar-brand"><Link href="/">Brand</Link></div>
+            <div className="navbar-brand"><div className="cursor" onClick={()=>router.push("/")}>E <span>cardZ</span></div></div>
             <div className="navbar-content">
                 <ul>
                     <li><Link href="/">Home</Link></li>

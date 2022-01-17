@@ -34,14 +34,14 @@ h2 {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background-color: wheat;
+  background-color: rgb(14 61 69);
   /* background-color: rgb(3, 9, 10); */
   font-size: 1.2rem;
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
   padding: 0 100px;
   /* padding: 0 100px; */
-  color: black;
+  color: white;
   /* opacity: 0.7; */
   z-index: 1000;
 }
@@ -148,7 +148,7 @@ h2 {
   color: white;
 }
 .blue {
-  background-color: blue;
+  background-color: #6f6fc8;
 }
 .red {
   background-color: red;
@@ -170,10 +170,16 @@ button :hover {
   overflow-y: scroll;
   z-index: 1500;
 }
+
 .portfolio-form {
+  display: -moz-box;
   display: flex;
-  flex-direction: column;
-  width: 40%;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  /* flex-direction: column; */
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-around;
   height: auto;
   margin: auto;
   background: white;
@@ -208,11 +214,18 @@ button :hover {
   justify-content: flex-end;
   align-items: center;
 }
+/* .portfolio-form input {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+} */
 .portfolio-form input {
   padding: 20px;
   margin: 10px 0;
   border-radius: 5px;
   border: 1px solid lightblue;
+  min-width: 300px;
 }
 .portfolio-button {
   display: flex;
@@ -247,14 +260,15 @@ button :hover {
 }
 .footer {
   height: 80px;
-  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(165, 233, 245);
+  color: white;
+  font-weight: bold;
+  background-color: rgb(14 61 69);
 }
 .home {
   background-image: url("../images/body-section.png");
@@ -282,7 +296,8 @@ button :hover {
   cursor: pointer;
 }
 .bg-contact{
-  background-color: wheat;
+  background-color: rgb(14 61 69);
   padding: 30px;
   border-radius: 30px;
+  color: white;
 }
